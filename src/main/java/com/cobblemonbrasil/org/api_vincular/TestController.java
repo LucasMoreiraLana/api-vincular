@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
 
     @GetMapping("/vincular")
-    public String estouAqui() {
-        return "Estou aqui" ;
+    public String estouAqui(@RequestParam String code) {
+        return code;
     }
 
 }
