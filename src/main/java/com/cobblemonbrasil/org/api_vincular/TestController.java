@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class TestController {
 
-    @PostMapping("/vincular")
-    public String helloWorld(@RequestBody String body) {
-        return body;
+    @GetMapping("/vincular")
+    public String estouAqui() {
+        return "Estou aqui" ;
     }
 
 }
