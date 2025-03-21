@@ -27,6 +27,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'com.google.apis:google-api-services-sheets:v4-rev20220927-2.0.0' // API do Google Sheets
+	implementation 'com.google.auth:google-auth-library-oauth2-http:1.23.0' // Autenticação Google
+	implementation 'javax.annotation:javax.annotation-api:1.3.2'
+	implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 }
 
 tasks.named('test') {
