@@ -1,6 +1,5 @@
-package com.cobblemonbrasil.org.api_vincular.controller;
+package com.cobblemonbrasil.org.api_vincular;
 
-import com.cobblemonbrasil.org.api_vincular.GoogleSheetsService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
