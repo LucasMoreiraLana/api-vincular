@@ -20,9 +20,9 @@ public class TestController {
     private GoogleSheetsService sheetsService;
 
     @Value("${discord.client-id}")
-    private static final String CLIENT_ID = ""; // Substitua
+    private String CLIENT_ID; // Substitua
     @Value("${discord.client-secret}")
-    private static final String CLIENT_SECRET = ""; // Substitua
+    private String CLIENT_SECRET; // Substitua
 
     private static final String REDIRECT_URI = "http://localhost:8080/vincular/callback";
     private static final OkHttpClient client = new OkHttpClient();
