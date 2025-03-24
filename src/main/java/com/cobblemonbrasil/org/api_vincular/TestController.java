@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,8 +19,11 @@ public class TestController {
     @Autowired
     private GoogleSheetsService sheetsService;
 
-    private static final String CLIENT_ID = "SEU_CLIENT_ID"; // Substitua
-    private static final String CLIENT_SECRET = "SEU_CLIENT_SECRET"; // Substitua
+    @Value("${discord.client-id}")
+    private static final String CLIENT_ID = ""; // Substitua
+    @Value("${discord.client-secret}")
+    private static final String CLIENT_SECRET = ""; // Substitua
+
     private static final String REDIRECT_URI = "http://localhost:8080/vincular/callback";
     private static final OkHttpClient client = new OkHttpClient();
     private static final ObjectMapper mapper = new ObjectMapper();

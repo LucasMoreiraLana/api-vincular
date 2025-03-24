@@ -31,6 +31,7 @@ dependencies {
 	implementation 'com.google.auth:google-auth-library-oauth2-http:1.23.0' // Autenticação Google
 	implementation 'javax.annotation:javax.annotation-api:1.3.2'
 	implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
 }
 
 tasks.named('test') {
